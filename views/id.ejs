@@ -1,0 +1,24 @@
+<%- include('partials/head') %>
+
+<body>
+  <%- include('partials/header') %>
+
+  <figure class='single-animal'>
+      <div class='large-photo'>
+        <img src="../images/md/<%= photo.fileName %> " alt="<%= photo.title %>">
+      </div>
+      <div class='description'>
+        <h2><%= photo.title %></h2>
+        <figcaption><%= photo.attribution.credit %></figcaption>
+        <a class='lorem-picsum' href="<%= photo.attribution.url %>" target="_blank">See <%= photo.attribution.credit %> on Lorem Picsum</a>
+      </div>
+  
+  </figure>
+
+  <div class='gallery-button'>
+    <button><a href="/gallery">Back to Gallery</a></button>
+  </div>
+ 
+  <%- include('partials/footer') %>
+</body>
+    
